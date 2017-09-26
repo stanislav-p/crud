@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+  .navbar {
+    .main-nav {
+      margin-left: 1%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .navbar {
+
+    .navbar-header {
+      padding: 1% 1% 2%;
+
+      .navbar-toggle{
+        border-color: $text-color;
+        background-color: transparent;
+
+        .icon-bar {
+          background: $text-color;
+        }
+
+        &:hover {
+          background: $text-color;
+
+          .icon-bar {
+            background: $main-color;
+          }
+        }
+      }
+    }
+
+    .navbar-nav {
+      margin: 0;
+      text-align: center;
+    }
+  }
+}

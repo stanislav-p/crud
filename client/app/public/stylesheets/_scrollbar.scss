@@ -1,0 +1,20 @@
+/*--------------*/
+/** SCROLLBAR **/
+/*------------*/
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba($main-color, 0.2);
+
+  &:hover {
+    background-color: rgba($main-color, 0.3);
+  }
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: rgba($main-color, 0.3);
+
+  &:active {
+    background: rgba($main-color, 0.5);
+  }
+}

@@ -1,0 +1,121 @@
+/***********/
+/* HEADER */
+/*********/
+
+
+
+.navbar {
+  background-color: $main-color;
+  padding: 1%;
+  @include border-radius(0);
+
+
+  .navbar-brand {
+    padding: 0;
+    margin-right: 10px;
+
+    img {
+      width: 50px;
+      height: 50px;
+      @include border-radius(100%);
+      @include transition(all, 0.5s);
+
+      &:hover {
+        @include rotate(180deg);
+      }
+    }
+  }
+
+  .nav li {
+    a {
+      color: $text-color;
+      @include transition(linear, .2s);
+
+      &:hover {
+        color: $hover-color;
+      }
+
+      &:focus {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+
+
+/***********************/
+/* START PAGE == MAIN */
+/*********************/
+
+.welcome {
+  text-align: center;
+  font-size: 32px;
+}
+
+
+
+/*******************/
+/* COMPANIES PAGE */
+/*****************/
+
+
+.companies {
+  border: 2px solid;
+  margin: auto;
+
+  .headers,
+  .edit,
+  .delete {
+    text-align: center;
+  }
+
+  .headers {
+    font-weight: 600;
+    background: rgba($main-color, 0.25);
+  }
+
+  .delete .fa {
+    @include transition(linear, 0.1s);
+
+    &:hover {
+      color: rgb(199, 0, 4);
+    }
+  }
+
+  td {
+    border: 1px solid;
+    padding: 12px 25px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #888;
+    transition: 0.1s;
+    outline: none;
+
+    &:visited {
+      outline: none;
+    }
+
+    &:hover {
+      color: #111;
+    }
+  }
+}
+
+
+
+/***********************/
+/* ADD AND EDIT PAGES */
+/*********************/
+
+.add_company,
+.edit_company {
+  .main-btn {
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 8px;
+    @include transition(all, 0.1s);
+  }
+}
