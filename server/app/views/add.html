@@ -1,0 +1,35 @@
+<div class="add_company">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6">
+                <form name="addForm" ng-submit="addForm.$valid && add.addCompany()" novalidates>
+
+                    <div class="form-group">
+                        <label for="createName">Name</label>
+                        <input type="text" name="name" class="form-control" id="createName" ng-model="add.regData.name" pattern="[A-Za-z\s]{3,20}">
+                    </div>
+                    <div class="form-group">
+                        <label for="setEarnings">Earnings</label>
+                        <input type="number" name="earnings" class="form-control" id="setEarnings" ng-model="add.regData.earnings" pattern="\d{3,7}">
+                    </div>
+
+                    <button type="submit" class="btn main-btn">Add New Company</button>
+                </form>
+
+                <!--<div class="jumbotron text-center" ng-show="add.loading">-->
+                    <!--<span class="glyphicon glyphicon-repeat spinner"></span>-->
+                    <!--<p>Loading...</p>-->
+                <!--</div>-->
+
+                <div class="show-hide-message animated tada" ng-show="add.successMsg">
+                    <div class="alert alert-success">{{ add.successMsg }}</div>
+                </div>
+
+                <div class="show-hide-message animated zoomIn" ng-show="add.errorMsg">
+                    <div class="alert alert-danger">{{ add.errorMsg }}</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
