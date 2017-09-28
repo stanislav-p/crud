@@ -6,4 +6,4 @@
 * Go to the http://localhost:8080 
 
 #### Ready project
-* https://shrouded-dawn-29387.herokuapp.com/
+* https://shrouded-dawn-29387.herokuapp.com
