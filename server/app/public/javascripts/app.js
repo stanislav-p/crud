@@ -1,0 +1,1 @@
+var app = angular.module('crudApp', ['ngRoute', 'crudRoutes', 'companyController', 'addController', 'editController', 'deleteController', 'companyService', 'addService']);

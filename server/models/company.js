@@ -11,13 +11,22 @@ var CompanySchema = new Schema({
     earnings: {
         type: Number,
         required: true
-    }//,
-    //mainCompany: {
-    //    type: ObjectId,
-    //    default: '59c9782531824b08ec25fa7e'
-    //}
+    },
+    parent: {
+        // type: ObjectId,
+        type: String
+    },
+    children: {
+        type: [{
+            name: String,
+            earnings: Number
+        }]
+    }
 });
 
+
 module.exports = mongoose.model('Company', CompanySchema);
+
+
 
 
